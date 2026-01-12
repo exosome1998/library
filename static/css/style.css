@@ -1,0 +1,405 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Content */
+.content {
+    padding: 40px;
+    min-height: 400px;
+}
+
+/* Login Container */
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-card {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Messages */
+.error {
+    background: #fee;
+    color: #c33;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c33;
+    font-size: 14px;
+}
+
+.success {
+    background: #efe;
+    color: #2c7;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2c7;
+    font-size: 14px;
+}
+
+/* Test Accounts */
+.test-accounts {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+    border: 2px solid #e0e0e0;
+}
+
+.test-accounts h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.account-info {
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.account-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Hint Box */
+.hint-box {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 25px;
+    border-left: 4px solid #ffc107;
+}
+
+.hint-box p {
+    font-size: 13px;
+    color: #856404;
+    margin: 5px 0;
+}
+
+.hint-box code {
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+}
+
+/* Signup Link */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.signup-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 4px solid #3498db;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.member-id {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.books-table th,
+.books-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.books-table th {
+    background: #ecf0f1;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.books-table tr:hover {
+    background: #f5f5f5;
+}
+
+.no-data {
+    color: #95a5a6;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Reviews */
+.reviews-container h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.review-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review-header strong {
+    color: #2c3e50;
+}
+
+.review-header em {
+    color: #3498db;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #95a5a6;
+}
+
+.review-content {
+    color: #555;
+    line-height: 1.6;
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Footer */
+.footer {
+    background: #ecf0f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.disclaimer {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 2px solid #ffc107;
+}
+
+.disclaimer p {
+    margin: 5px 0;
+    color: #856404;
+    font-size: 14px;
+}
+
+.disclaimer strong {
+    color: #d63031;
+}
+
+.copyright {
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+    .books-table {
+        font-size: 14px;
+    }
+
+    .books-table th,
+    .books-table td {
+        padding: 8px;
+    }
+}
